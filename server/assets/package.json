@@ -1,0 +1,12 @@
+{
+  "name": "frontend",
+  "collaborators": [
+    "DevOrc <ncharlton002@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "frontend_bg.wasm",
+    "frontend.js"
+  ],
+  "browser": "frontend.js"
+}
