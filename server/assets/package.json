@@ -8,5 +8,6 @@
     "frontend_bg.wasm",
     "frontend.js"
   ],
-  "browser": "frontend.js"
+  "module": "frontend.js",
+  "sideEffects": "false"
 }
