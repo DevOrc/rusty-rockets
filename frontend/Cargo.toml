@@ -4,8 +4,11 @@ version = "0.1.0"
 authors = ["DevOrc <ncharlton002@gmail.com>"]
 edition = "2018"
 
-[dependencies]
-wasm-bindgen = "0.2"
-
 [lib]
 crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+lib = {path="../lib"}
+console_error_panic_hook = "0.1.6"
+draco = "0.1.2"

@@ -1,17 +1,13 @@
-<h1>Hello World!</h1>
 <script type="text/javascript" src="frontend.js"></script>
-
 
 <script>
     function runWasm() {
-        wasm_bindgen("frontend_bg.wasm").then(onWasmLoaded);
-    }
-
-    function onWasmLoaded() {
-        var num = wasm_bindgen.add_with_rust(25, 5);
-
-        alert("According to Rust, 25 + 5 = " + num);
+        wasm_bindgen("frontend_bg.wasm");
     }
 </script>
 
-<body onload="runWasm();"></body>
+<body onload="runWasm();">
+    <dracoApp>
+        
+    </dracoApp>
+</body>
