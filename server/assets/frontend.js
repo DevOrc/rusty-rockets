@@ -1,4 +1,6 @@
 const __exports = {};
+import { send_message } from './snippets/frontend-aebe9231459ec4d1/js/engine.js';
+import { initEngine } from './snippets/frontend-aebe9231459ec4d1/js/engine.js';
 
 let wasm;
 
@@ -22,6 +24,19 @@ function __wbg_log_340625fac3035954(arg0, arg1) {
 }
 
 __exports.__wbg_log_340625fac3035954 = __wbg_log_340625fac3035954;
+
+function __wbg_sendmessage_d4f7ac7b39e0eeb9(arg0, arg1) {
+    let varg0 = getStringFromWasm(arg0, arg1);
+    send_message(varg0);
+}
+
+__exports.__wbg_sendmessage_d4f7ac7b39e0eeb9 = __wbg_sendmessage_d4f7ac7b39e0eeb9;
+
+function __wbg_initEngine_1106fe58a46c501d() {
+    initEngine();
+}
+
+__exports.__wbg_initEngine_1106fe58a46c501d = __wbg_initEngine_1106fe58a46c501d;
 /**
 * @returns {void}
 */
@@ -501,7 +516,7 @@ function __wbindgen_throw(ptr, len) {
 
 __exports.__wbindgen_throw = __wbindgen_throw;
 
-function __wbindgen_closure_wrapper102(a, b, _ignored) {
+function __wbindgen_closure_wrapper105(a, b, _ignored) {
     const f = wasm.__wbg_function_table.get(32);
     const d = wasm.__wbg_function_table.get(33);
     const cb = function(arg0) {
@@ -525,7 +540,7 @@ function __wbindgen_closure_wrapper102(a, b, _ignored) {
     return addHeapObject(real);
 }
 
-__exports.__wbindgen_closure_wrapper102 = __wbindgen_closure_wrapper102;
+__exports.__wbindgen_closure_wrapper105 = __wbindgen_closure_wrapper105;
 
 function __wbindgen_object_clone_ref(idx) {
     return addHeapObject(getObject(idx));
